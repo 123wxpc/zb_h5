@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>智慧物流设备解决方案</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+    }
+
+    /* 固定标题样式 */
+    .fixed-title {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 750px;
+      background-color: #007aff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .fixed-title h1 {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* 卡片容器 */
+    .robot-container {
+      width: 100%;
+      max-width: 750px;
+    }
+
+    /* 单个卡片 - 改为上下布局 */
+    .robot-item {
+      display: flex;
+      flex-direction: column; /* 关键修改：从row改为column */
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 图片部分 - 调整样式 */
+    .robot-item img {
+      width: 100%; /* 关键修改：宽度100%占满容器 */
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 15px; /* 关键修改：图片与文字的垂直间距 */
+      flex-shrink: 0;
+      cursor: zoom-in;
+    }
+
+    /* 文字描述部分 */
+    .robot-desc {
+      flex: 1;
+    }
+
+    .robot-desc h2 {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .robot-desc p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* 平板及以上优化（可选） */
+    @media (min-width: 768px) {
+      .robot-item img {
+        width: 100%; /* 大屏幕仍保持100%宽度，上下布局更统一 */
+      }
+
+      .robot-desc h2 {
+        font-size: 18px;
+      }
+
+      .robot-desc p {
+        font-size: 15px;
+      }
+    }
+
+    /* 解决部分安卓手机滚动问题 */
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 固定标题部分 -->
+  <div class="fixed-title">
+    <h1>轻型自动包装产线</h1>
+  </div>
+
+
+  <div class="robot-container">
+    <div class="robot-item">
+      <a href="images\package\1.1、自动装箱机.png" data-glightbox="robots">
+        <img src="images\package\1.1、自动装箱机.png" alt="自动装箱机">
+      </a>
+      <div class="robot-desc">
+        <h2>自动装箱机</h2>
+        <p>该机器可手动 / 自动适配不同纸箱规格，调节输送带宽高，操作便捷；全自动开箱，成型、折底、封底一步完成，效率达 600 箱 / 小时，支持单机或配套使用，广泛应用于食品、医药、烟草等多行业 。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\1.2、自动移栽装箱机.png" data-glightbox="robots">
+        <img src="images\package\1.2、自动移栽装箱机.png" alt="自动移栽装箱机">
+      </a>
+      <div class="robot-desc">
+        <h2>自动移栽装箱机</h2>
+        <p>这是智能型全自动装箱机，可包装瓶、盒、袋、异形物及带隔板包装箱，用吸头、夹爪手等夹具放物料入箱，夹具抬起即排箱送封箱机；采用 PLC + 触摸屏控制，有缺料报警、无料不装箱等安全装置，广泛用于食品、医药、日化等轻工行业 。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\1.3、自动封箱机配套自动四角封箱.png" data-glightbox="robots">
+        <img src="images\package\1.3、自动封箱机配套自动四角封箱.png" alt="自动封箱机配套自动四角封箱">
+      </a>
+      <div class="robot-desc">
+        <h2>自动封箱机配套自动四角封箱</h2>
+        <p>该机器可根据纸箱规格，手工或自动调输送带宽高，操作便捷，适用于多种纸箱折盖自动工字型封箱（上下四角同时封口 ），可单机或配套用，广泛应用于食品、医药等多行业 。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\1.4、自动打包机.png" data-glightbox="robots">
+        <img src="images\package\1.4、自动打包机.png" alt="自动打包机">
+      </a>
+      <div class="robot-desc">
+        <h2>自动打包机</h2>
+        <p>该机器可依据箱体 / 包材，手工预设捆紧扎力、电热温度、进带时间，操作便捷，能自动完成捆绑打包，捆包速度达 2S / 道，支持单机或配套使用，广泛应用于食品、医药、烟草等多行业 。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\1.5、十字封箱组合机.png" data-glightbox="robots">
+        <img src="images\package\1.5、十字封箱组合机.png" alt="十字封箱组合机">
+      </a>
+      <div class="robot-desc">
+        <h2>十字封箱组合机</h2>
+        <p>该机器可根据纸箱规格手动或自动调节输送带宽度及高度，操作简单快捷，能全自动完成纸箱折盖和十字封箱（适用 1 - 12 号邮政纸箱封箱贴单 ），支持单机或配套使用，已广泛应用于食品、医药等多行业 。</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+  <script>
+    GLightbox({
+      selector: '[data-glightbox="robots"]',
+      loop: true,
+      touchNavigation: true,
+      autoplayVideos: false
+    });
+  </script>
+</body>
+
+</html>

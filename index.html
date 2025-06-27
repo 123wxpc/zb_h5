@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>产品和服务</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(180deg, #e6f2ff 0%, #f0f8ff 100%);
+      color: #333;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    /* 产品服务模块 */
+    .product-section {
+      background-color: #a0c1f9;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .section-title {
+      background-color: #007aff;
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .product-item {
+      background-color: #f9fcff;
+      border: 1px solid #e6f2ff;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      color: #1863eb;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      margin-bottom: 8px;
+      position: relative; 
+      padding-right: 40px; /* 给箭头留空间 */
+      overflow: hidden;
+    }
+
+    /* 自定义箭头：用背景图实现，默认循环动画 */
+    .product-item::after {
+      content: "";
+      /* 替换为你的箭头图标路径 */
+      background-image: url('images/index/箭头.png'); 
+      background-size: 24px 24px; /* 图标大小 */
+      background-repeat: no-repeat;
+      position: absolute;
+      /* 调整 right 值，数值越大箭头越靠左，比如改为 20px */
+      right: 20px; 
+      top: 50%; 
+      transform: translateY(-50%);
+      width: 24px; 
+      height: 24px; 
+      /* 新增：默认循环动画 */
+      animation: arrowMove 1s infinite alternate; 
+    }
+
+    /* 箭头动画：水平往复移动 */
+    @keyframes arrowMove {
+      0% {
+        transform: translateY(-50%) translateX(0);
+      }
+      100% {
+        transform: translateY(-50%) translateX(8px);
+      }
+    }
+
+    .product-item:hover {
+      background-color: #e6f2ff;
+      transform: translateY(-2px);
+    }
+
+    /* 联系我们模块 */
+    .contact-section {
+      background-color: #fff; 
+      border-radius: 12px; 
+      padding: 15px; 
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+    }
+
+    .contact-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center; 
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .contact-item img {
+      width: 60px; 
+      height: 60px; 
+      border-radius: 50%; 
+      flex-shrink: 0; 
+    }
+
+    .contact-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-text label {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+
+    .contact-text .phone-number {
+      font-size: 18px;
+      color: #1863eb;
+      font-weight: bold;
+    }
+
+    /* 统一联系方式的缩进，实现对齐 */
+    .contact-item .contact-text {
+      margin-left: 0; 
+    }
+
+    /* 垂直方向对齐调整 */
+    .contact-item {
+      align-items: flex-start; 
+      padding-top: 6px; 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 产品服务区域 -->
+    <div class="product-section">
+      <div class="section-title">产品和服务</div>
+      <div class="product-list">
+        <a class="product-item" href="device.html">智慧物流设备解决方案</a>
+        <a class="product-item" href="package.html">智慧自动包装系统解决方案</a>
+        <a class="product-item" href="service.html">综合物流解决方案</a>
+        <a class="product-item" href="software.html">智慧数字工厂解决方案</a>
+        <a class="product-item" href="warehouse.html">智慧立体仓库解决方案</a>
+      </div>
+    </div>
+
+    <!-- 联系我们区域 -->
+    <div class="contact-section">
+      <div class="contact-title">联系我们</div>
+      <div class="contact-item">
+        <img src="images\index\客服图片.png" alt="咨询图标">
+        <div class="contact-text">
+          <label>平台咨询热线</label>
+          <span class="phone-number">400-698-5756</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

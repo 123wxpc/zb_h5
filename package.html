@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>智慧自动包装系统解决方案</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    /* 固定蓝色标题 */
+    .fixed-title {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 750px;
+      background-color: #007aff;
+      padding: 12px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .fixed-title h1 {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+
+    /* 内容容器 */
+    .content-wrapper {
+      width: 100%;
+      max-width: 750px;
+      margin-top: 60px;
+    }
+
+    /* 卡片容器 */
+    .robot-container {
+      width: 100%;
+    }
+
+    /* 单个卡片 */
+    .robot-item {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 18px 15px; /* 增大内边距 */
+      margin-bottom: 18px; /* 增大卡片间距 */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .robot-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 图片容器 */
+    .robot-image {
+      text-align: center;
+      margin-bottom: 15px; /* 增大图片与文字间距 */
+    }
+
+    .robot-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* 文字描述 */
+    .robot-desc {
+      flex: 1;
+      margin-bottom: 40px; /* 为按钮留出空间 */
+    }
+
+    .robot-desc h2 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px; /* 增大标题与文字间距 */
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .robot-desc p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* 按钮样式（右下角定位+箭头） */
+    .action-button {
+      background-color: #007aff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px 10px 20px; /* 增大内边距 */
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .action-button:hover {
+      background-color: #0065d9;
+    }
+
+    /* 箭头图标 */
+    .action-button::after {
+      content: "";
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 7px solid white;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 8px;
+    }
+
+    /* 平板及以上适配 */
+    @media (min-width: 768px) {
+      .robot-desc h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 固定蓝色标题 -->
+  <div class="fixed-title">
+    <h1>智慧自动包装系统解决方案</h1>
+  </div>
+
+  <!-- 内容容器 -->
+  <div class="content-wrapper">
+    <div class="robot-container">
+      <!-- 卡片1 -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images/package/1、轻型自动包装产线.png" data-glightbox="package">
+            <img src="images/package/1、轻型自动包装产线.png" alt="轻型自动包装产线">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>轻型自动包装产线</h2>
+          <p>
+            自动开箱机、自动装箱机、半自动折盖封箱机、角边封箱机与机器人码垛机构成整合配套包装线，可完成纸箱 “工字型”
+            封箱包装，应用广、占地小、性能稳、品质可靠、包装效率高，能减人工、提产效、降成本，还可依客户需求个性化定制，是生产企业优选。
+          </p>
+        </div>
+        <!-- 按钮移到底部容器外 -->
+        <a href="package_qx.html" class="action-button">查看详情</a>
+      </div>
+
+      <!-- 卡片2 -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\package\2、重型自动包装产线.png" data-glightbox="package">
+            <img src="images\package\2、重型自动包装产线.png" alt="重型自动包装产线">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>重型自动包装产线</h2>
+          <p>
+            重型自动包装产线是高度自动化的工业包装系统,用于重型产品包装。由输送设备(如重型辊道、链板输送机)、包装机械(装箱机、缠
+            绕机、封口机等)、码垛机械(机器人、龙门式码垛机)及控制系统(PLC、传感器、触摸屏)组成。工作流程包括产品输送、包装作业(含质量
+            检测)、码垛存储,可实现高效精准包装,优势明显。
+          </p>
+        </div>
+        <a href="package_zx.html" class="action-button">查看详情</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLightbox 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+  <script>
+    GLightbox({
+      selector: '[data-glightbox="package"]',
+      loop: false,
+      touchNavigation: true,
+      autoplayVideos: false
+    });
+  </script>
+</body>
+
+</html>

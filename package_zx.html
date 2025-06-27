@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>智慧物流设备解决方案</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+    }
+
+    /* 固定标题样式 */
+    .fixed-title {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 750px;
+      background-color: #007aff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .fixed-title h1 {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* 卡片容器 */
+    .robot-container {
+      width: 100%;
+      max-width: 750px;
+    }
+
+    /* 单个卡片 - 改为上下布局 */
+    .robot-item {
+      display: flex;
+      flex-direction: column; /* 核心修改：布局方向改为垂直 */
+      align-items: flex-start; /* 内容左对齐 */
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 图片部分 - 自适应宽度 */
+    .robot-item img {
+      width: 100%; /* 图片占满容器宽度 */
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 15px; /* 图片与文字的垂直间距 */
+      flex-shrink: 0;
+      cursor: zoom-in;
+    }
+
+    /* 文字描述部分 */
+    .robot-desc {
+      flex: 1;
+    }
+
+    .robot-desc h2 {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .robot-desc p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* 平板及以上优化 */
+    @media (min-width: 768px) {
+      .robot-item img {
+        width: 100%; /* 大屏幕仍保持100%宽度 */
+      }
+
+      .robot-desc h2 {
+        font-size: 18px;
+      }
+
+      .robot-desc p {
+        font-size: 15px;
+      }
+    }
+
+    /* 解决安卓滚动问题 */
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 固定标题部分 -->
+  <div class="fixed-title">
+    <h1>重型自动包装产线</h1>
+  </div>
+
+
+  <div class="robot-container">
+    <div class="robot-item">
+      <a href="images\package\2.1、穿剑式护角顶部捆扎机.png" data-glightbox="robots">
+        <img src="images\package\2.1、穿剑式护角顶部捆扎机.png" alt="穿剑式护角顶部捆扎机">
+      </a>
+      <div class="robot-desc">
+        <h2>穿剑式护角顶部捆扎机</h2>
+        <p>这是穿剑式护角捆绑机的介绍：采用摩擦式机芯与多仓护角，护角防物料变形破损；设计合理、压力可控，捆绑牢固，运输存储不易散开；操作界面直观、流程简单，员工易掌握；适用范围广，可捆绑各类形状尺寸物品，支持单机或流水线配合，广泛用于物品捆绑作业。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\2.2、缠膜打带一体机.png" data-glightbox="robots">
+        <img src="images\package\2.2、缠膜打带一体机.png" alt="缠膜打带一体机">
+      </a>
+      <div class="robot-desc">
+        <h2>缠膜打带一体机</h2>
+        <p>该款机器占地面积小，可同时实现自动绕膜与井字打带，全程无需人工；缠膜机构能自动上、断、黏膜，光电开关感应货物高度，双限位保护安全性高；触摸屏操作简便，可按需设置缠绕层数等参数；动力预拉伸膜架能将1米膜拉伸至2.5米，节省保护膜，广泛应用于机械、五金等行业包装。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\2.3、水平打带机.png" data-glightbox="robots">
+        <img src="images\package\2.3、水平打带机.png" alt="水平打带机">
+      </a>
+      <div class="robot-desc">
+        <h2>水平打带机</h2>
+        <p>水平式打带机由摩擦式机芯、电磁刹车、全密封机芯传动模组构成，可上下打带，弥补井字打带机功能短板；设计合理、压力可控，捆绑牢固（如钢材等重物捆绑保障运输安全）；操作界面直观、流程简单，员工易上手；适用范围广，可捆绑各类形状尺寸物品（如方形纸箱、圆形管材）。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\2.4、全自动在线缠绕覆顶机.png" data-glightbox="robots">
+        <img src="images\package\2.4、全自动在线缠绕覆顶机.png" alt="全自动在线缠绕覆顶机">
+      </a>
+      <div class="robot-desc">
+        <h2>全自动在线缠绕覆顶机</h2>
+        <p>这是一款占地小的包装设备，可自动绕膜、覆顶，全程无需人工。缠膜机构能自动上、断、黏膜，借光电感应和双重限位保障安全，触摸屏易操作，可按需设缠绕层数等参数，动力预拉伸膜架节省保护膜，广泛用于机械、五金等行业包装。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\2.5、悬臂缠绕机.png" data-glightbox="robots">
+        <img src="images\package\2.5、悬臂缠绕机.png" alt="悬臂缠绕机">
+      </a>
+      <div class="robot-desc">
+        <h2>悬臂缠绕机</h2>
+        <p>这是一款包装设备的性能与应用说明，其缠膜机构可自动上、断、黏膜，借光电感应和双重限位保障安全；触摸屏易操作，能按需设缠绕参数；动力预拉伸膜架可节省保护膜，广泛用于机械、五金、电子等行业包装。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\package\2.6、自走式缠绕机.png" data-glightbox="robots">
+        <img src="images\package\2.6、自走式缠绕机.png" alt="自走式缠绕机">
+      </a>
+      <div class="robot-desc">
+        <h2>自走式缠绕机</h2>
+        <p>这是一款可移动的包装设备，触摸屏操作简便，能按需设缠绕参数；缠膜机构自动上、断、粘膜，借光电感应和双重限位保障安全；动力预拉伸膜架可省保护膜，广泛用于机械、五金等行业包装。</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+  <script>
+    GLightbox({
+      selector: '[data-glightbox="robots"]',
+      loop: true,
+      touchNavigation: true,
+      autoplayVideos: false
+    });
+  </script>
+</body>
+
+</html>

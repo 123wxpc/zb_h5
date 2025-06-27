@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>智慧数字工厂解决方案</title>
+  <!-- GLightbox 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      /* 整体内边距缩小 */
+    }
+
+    /* 固定蓝色标题（保留原有样式，微调间距） */
+    .fixed-title {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 750px;
+      background-color: #007aff;
+      padding: 12px 20px;
+      /* 标题内边距缩小 */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .fixed-title h1 {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+
+    /* 内容容器（压缩与标题的间距） */
+    .content-wrapper {
+      width: 100%;
+      max-width: 750px;
+      margin-top: 60px;
+      /* 减少与标题的间距 */
+    }
+
+    /* 卡片容器 */
+    .robot-container {
+      width: 100%;
+    }
+
+    /* 单个卡片 - 压缩间距 */
+    .robot-item {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 12px 15px;
+      /* 卡片内边距缩小 */
+      margin-bottom: 12px;
+      /* margin-top: 30px; */
+      margin-bottom: 30px;
+      /* 卡片之间间距缩小 */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* 卡片 hover 效果（保留） */
+    .robot-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 图片容器（压缩间距） */
+    .robot-image {
+      text-align: center;
+      margin-bottom: 10px;
+      /* 图片与文字间距缩小 */
+    }
+
+    .robot-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* 文字描述（压缩间距） */
+    .robot-desc h2 {
+      font-size: 17px;
+      /* 标题字号微调 */
+      color: #333;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      /* 标题与文字间距缩小 */
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .robot-desc p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.7;
+      /* 行高缩小 */
+      text-align: justify;
+    }
+
+    /* 平板及以上适配（可选） */
+    @media (min-width: 768px) {
+      .robot-desc h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 固定蓝色标题 -->
+  <div class="fixed-title">
+    <h1>综合物流解决方案</h1>
+  </div>
+
+  <!-- 内容容器（压缩间距） -->
+  <div class="content-wrapper">
+    <div class="robot-container">
+      <!-- 卡片1 -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\国内空运.png" data-glightbox="package">
+            <img src="images\service\国内空运.png" alt="精准空运">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>精准空运</h2>
+          <p>
+            全国各地空运:
+            时效快(快速 高效)，专人专车服务
+            1.实行8小时、12小时的快速站到站
+            服务;
+            2.实行24小时、36小时的门到门服
+            务。
+            公司空运实力:
+            连续多年被多家航空公司评选为优
+            秀代理人，全国共有1000多家直营
+            及代理网点，5000多台各式车辆，
+            无论是偏远乡村还是繁华闹市区，
+            服务质量绝对保证，客户满意度指
+            数长期达到99.98%。
+          </p>
+        </div>
+      </div>
+
+      <!-- 卡片2（示例，可复制） -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\国内公路运输.png" data-glightbox="package">
+            <img src="images\service\国内公路运输.png" alt="国内公路运输">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>国内公路运输</h2>
+          <p>
+            业务范围覆盖全国主要省份及地
+            区
+            《华南区、华北区、华东区、华
+            中区、
+            东北区、西南区、西北
+            区》，
+            提供从门到门的全过程优质
+            服务，运输时效高，香港、上海、
+            昆山、苏州、无锡、武汉厦门、福
+            州路线24-48小时到达，北京、天津
+            大连、青岛、上海、重庆、成都等
+            36-60小时到达。</p>
+        </div>
+      </div>
+
+      <!-- 卡片2（示例，可复制） -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\国内整车运输.png" data-glightbox="package">
+            <img src="images\service\国内整车运输.png" alt="国内整车运输">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>国内整车运输</h2>
+          <p>
+            全国各地提供3吨至30吨海关监管车
+            柜运输，出工厂后开始计时运输
+            ----全程高速及GPS跟踪装货后打封
+            条，中途不再装卸，整车运输让货
+            物质量更有保障和安全，时效更快</p>
+        </div>
+      </div>
+
+      <!-- 卡片2（示例，可复制） -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\大型物流运输.png" data-glightbox="package">
+            <img src="images\service\大型物流运输.png" alt="特种车大件运输">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>特种车大件运输</h2>
+          <p>
+
+            公司拥有遍布全国的大型物流网
+            络，配备大型运输车，科学统筹和
+            掌控道路三超大件运输项目，</p>
+        </div>
+      </div>
+
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\危险品运输.png" data-glightbox="package">
+            <img src="images\service\危险品运输.png" alt="危险品运输">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>危险品运输</h2>
+          <p>
+
+            公司经交通局批准，工商行政管理
+            局注册，取得危险品运输资质，公
+            司拥有一批专业的高索质人员，并
+            配有各种型号、载重量的危险品运
+            输车辆，可满足不同的运输需求。</p>
+        </div>
+      </div>
+
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\海外运输.png" data-glightbox="package">
+            <img src="images\service\海外运输.png" alt="海外运输服务">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>海外运输服务</h2>
+          <p>
+
+            承接中国各地到世界主要港口、
+            内
+            陆点的出口订舱、清关、转关、代
+            理检验/检疫、运输等一条龙服务;
+            可为国内外客户提供集装箱整箱
+            拼箱、散货及大宗货物的运输和租
+            船业务。</p>
+        </div>
+      </div>
+
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\VMI仓储服务.png" data-glightbox="package">
+            <img src="images\service\VMI仓储服务.png" alt="VMI仓储服务">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>VMI仓储服务</h2>
+          <p>
+
+            在全国拥有超过20万+平米的存储面积，可根据客户
+            对货物进行仓储、包装、加工、配送等需求进行量身
+            定制，为周边区域货物配送提供综合物流服务，并可
+            满足全天候24小时物流服务之需求。专业仓储管理硬
+            件+软件信息服务，为客户降低仓储成本及风险，提
+            高生产效率。</p>
+        </div>
+      </div>
+
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\service\中港运输.png" data-glightbox="package">
+            <img src="images\service\中港运输.png" alt="中港运输">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>中港运输</h2>
+          <p>
+            海关监管车每天往返 10班,价格全市最
+            低,今发明至,可代客入仓、清关、报关、回单、保税进
+            口,并可做到货物报关完成后进行国内运输。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLightbox 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+  <script>
+    GLightbox({
+      selector: '[data-glightbox="package"]',
+      loop: false,
+      touchNavigation: true,
+      autoplayVideos: false
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>智慧自动包装系统解决方案</title>
+  <!-- GLightbox 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <!-- Swiper 轮播图库 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    /* 固定蓝色标题 */
+    .fixed-title {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 750px;
+      background-color: #007aff;
+      padding: 12px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .fixed-title h1 {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* 内容容器 */
+    .content-wrapper {
+      width: 100%;
+      max-width: 750px;
+      margin-top: 60px;
+    }
+
+    /* 卡片容器 */
+    .robot-container {
+      width: 100%;
+    }
+
+    /* 单个卡片 */
+    .robot-item {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 12px 15px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .robot-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 轮播图容器 */
+    .robot-image {
+      position: relative;
+      margin-bottom: 0px;
+      border-radius: 4px;
+      overflow: hidden;
+      /* 隐藏轮播超出部分 */
+    }
+
+    /* Swiper 轮播样式 */
+    .swiper {
+      width: 100%;
+      height: 200px;
+      /* 轮播图高度，可调整 */
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-slide img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      /* 保持图片比例 */
+    }
+
+    /* 轮播图指示器 */
+    .swiper-pagination {
+      bottom: 8px;
+      z-index: 10;
+    }
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #007aff;
+      width: 16px;
+      border-radius: 4px;
+    }
+
+    /* 文字描述 */
+    .robot-desc h2 {
+      font-size: 17px;
+      color: #333;
+      margin-bottom: 14px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .robot-desc p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    @media (min-width: 768px) {
+      .robot-desc h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 固定蓝色标题 -->
+  <div class="fixed-title">
+    <h1>智慧立体仓库解决方案</h1>
+  </div>
+
+  <!-- 内容容器 -->
+  <div class="content-wrapper">
+    <div class="robot-container">
+
+
+      <!-- 成品智能立体仓库 -->
+      <div class="robot-item" >
+        <div class="robot-image">
+          <!-- 轻型包装产线轮播图 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="images\warehouse\成品库.png" data-glightbox="package1">
+                  <img src="images\warehouse\成品库.png" alt="成品库">
+                </a>
+              </div>
+              <!-- <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\2.png" alt="轻型自动包装产线2">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images/package/1、轻型自动包装产线3.png" alt="轻型自动包装产线3">
+                </a>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="robot-desc">
+          <h2>成品智能立体仓库</h2>
+          <p>
+            成品自动化立体仓库是一种现代物流系统的重要组成部分，它利用立
+            体仓库设备实现仓库高层合理化、存取自动化和管理简便化。这种仓库系统
+            通常由立体货架、自动化存取设备、出入库托盘输送机系统、尺寸检测条码
+            阅读系统、通讯系统、自动控制系统、计算机监控系统、计算机管理系统以
+            及其他辅助设备组成。自动化立体仓库的应用范围广泛，包括电子、机械、
+            医药、化妆品、烟草、汽车等行业,具有提升物流管理水平、提高作业效率
+            降低货损货差、节省占地、节约人力物力和财力等优点。
+          </p>
+        </div>
+      </div>
+
+      <!-- 线边智能立体仓库 -->
+      <div class="robot-item" >
+        <div class="robot-image">
+          <!-- 轻型包装产线轮播图 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="images\warehouse\线边仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\线边仓.png" alt="线边仓">
+                </a>
+              </div>
+              <!-- <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\2.png" alt="轻型自动包装产线2">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images/package/1、轻型自动包装产线3.png" alt="轻型自动包装产线3">
+                </a>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="robot-desc">
+          <h2>线边智能立体仓库</h2>
+          <p>
+            线边智能立体仓库是一种支持生产线不间断生产的物流配送体系，它
+            通过采用信息化平台、自动化立体仓库等技术装备,实现线边物流模式的变
+            革,从而改善线边物流作业。
+            这种仓库系统能够为生产车间提供物料定时、定点、定量的配送服务
+            确保生产线的顺畅运行。
+            线边立体仓库涉及多个方面,包括物料上线模式、运输工具、包装器具、
+            上线运输路线、线边货架和器具的数量与摆放布局等,从而构成一套全场景
+            物流配送体系。
+          </p>
+        </div>
+      </div>
+
+      <!-- 电商智能仓储系统 -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <!-- 轻型包装产线轮播图 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="images\warehouse\电商.png" data-glightbox="package1">
+                  <img src="images\warehouse\电商.png" alt="电商">
+                </a>
+              </div>
+              <!-- <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\2.png" alt="轻型自动包装产线2">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images/package/1、轻型自动包装产线3.png" alt="轻型自动包装产线3">
+                </a>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="robot-desc">
+          <h2>电商智能仓储系统</h2>
+          <p>
+            电商智能仓储系统的应用不仅改变了传统的仓储管理方式，而且促使
+            整个行业朝着智能化、高效化的方向发展。在电商运行链路中，从订单处
+            理、采购、入库、盘点、拣货、出货、配送等一系列环节，智能仓储管理
+            都发挥着至关重要的作用。例如，通过自动分拨墙、小黄人自动分拣设备
+            以及悬挂链输送系统等自动化设备的应用，可以高效准确地处理多品类商
+            品的多件订单分拣，极大地提高了分拣效率和准确率。
+          </p>
+        </div>
+      </div>
+
+      <!-- 原材料、半成品智能立体仓库 -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <!-- 轻型包装产线轮播图 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\原材料仓.png" alt="轻型自动包装产线1">
+                </a>
+              </div>
+              <!-- <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\2.png" alt="轻型自动包装产线2">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images/package/1、轻型自动包装产线3.png" alt="轻型自动包装产线3">
+                </a>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="robot-desc">
+          <h2>原材料、半成品智能立体仓库</h2>
+          <p>
+            原材料立体库的应用不仅限于制造业，它几乎涵盖了大部分行业，如
+            机械、冶金、化工、航空航天、电子、医药等。在制造业中,原材料立体库可以
+            用于存储原材料和零部件，以便于生产和装配过程。
+            通过自动化物料搬运设备和计算机管理系统的结合，原材料立体库成
+            为企业生产物流中的一个重要环节，实现了“动态储存”,与传统的“静态
+            储存”相比,这种转变显著提高了企业生产管理水平和物流系统的效率。
+          </p>
+        </div>
+      </div>
+
+      <!-- 冷链自动化物流仓储 -->
+      <div class="robot-item" >
+        <div class="robot-image">
+          <!-- 轻型包装产线轮播图 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="images\warehouse\冷库.png" data-glightbox="package1">
+                  <img src="images\warehouse\冷库.png" alt="冷库">
+                </a>
+              </div>
+              <!-- <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\2.png" alt="轻型自动包装产线2">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images/package/1、轻型自动包装产线3.png" alt="轻型自动包装产线3">
+                </a>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="robot-desc">
+          <h2>冷链自动化物流仓储</h2>
+          <p>
+            冷链自动化物流仓储系统主要应用于冷链物流，这是一种保证冷藏冷
+            冻类物品在生产、贮藏运输、销售到消费前的各个环节中始终处于规定的
+            低温环境下的系统工程。它是随着科学技术的进步和制冷技术的发展而建
+            立起来的，以冷冻工艺学为基础，以制冷技术为手段的低温物流过程。冷
+            链物流的成功实施依赖于对“3T原则”的遵循，即产品最终质量取决于
+            该冷链的储藏与流通的时间(time)、温度(temperature)和产品耐藏性
+            (tolerance)。此外，冷链自动化物流仓储系统的应用范围广泛，包括初
+            级农产品、加工食品以及特殊商品等。
+          </p>
+        </div>
+      </div>
+
+      <!-- 新能源产线智能物流系统 -->
+      <div class="robot-item" >
+        <div class="robot-image">
+          <!-- 轻型包装产线轮播图 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="images\warehouse\新能源产线.png" data-glightbox="package1">
+                  <img src="images\warehouse\新能源产线.png" alt="新能源产线">
+                </a>
+              </div>
+              <!-- <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images\warehouse\2.png" alt="轻型自动包装产线2">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="images\warehouse\原材料仓.png" data-glightbox="package1">
+                  <img src="images/package/1、轻型自动包装产线3.png" alt="轻型自动包装产线3">
+                </a>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="robot-desc">
+          <h2>新能源产线智能物流系统</h2>
+          <p>
+            新能源产线物流是一种针对于新能源电池生产的完整物流系统，从原
+            材料入库到涂布、模切、装配、注液、分成分容、测试、到最终的成品,具有一
+            整套的完整体系,其中包括原材料储存、涂布模切的 AGV 搬运,分成化容库
+            的出入、最终测试到成品储存的全自动化流程。
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 引入库 -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // 初始化 GLightbox
+      GLightbox({
+        selector: '[data-glightbox^="package"]',
+        loop: false,
+        touchNavigation: true
+      });
+
+      // 初始化 Swiper 轮播
+      document.addEventListener('DOMContentLoaded', function () {
+        const swipers = document.querySelectorAll('.swiper');
+        swipers.forEach(swiper => {
+          new Swiper(swiper, {
+            loop: true,              // 循环轮播
+            autoplay: {
+              delay: 3000,          // 自动播放间隔
+              disableOnInteraction: false  // 交互后继续自动播放
+            },
+            pagination: {
+              el: swiper.querySelector('.swiper-pagination'),
+              clickable: true        // 点击指示器可切换
+            },
+            // 移动端触摸滑动
+            touchRatio: 1,
+            slideToClickedSlide: true
+          });
+        });
+      });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>智慧数字工厂解决方案</title>
+  <!-- GLightbox 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      /* 整体内边距缩小 */
+    }
+
+    /* 固定蓝色标题（保留原有样式，微调间距） */
+    .fixed-title {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 750px;
+      background-color: #007aff;
+      padding: 12px 20px;
+      /* 标题内边距缩小 */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .fixed-title h1 {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+
+    /* 内容容器（压缩与标题的间距） */
+    .content-wrapper {
+      width: 100%;
+      max-width: 750px;
+      margin-top: 60px;
+      /* 减少与标题的间距 */
+    }
+
+    /* 卡片容器 */
+    .robot-container {
+      width: 100%;
+    }
+
+    /* 单个卡片 - 压缩间距 */
+    .robot-item {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 12px 15px;
+      /* 卡片内边距缩小 */
+      margin-bottom: 12px;
+      /* margin-top: 30px; */
+      margin-bottom: 30px;
+      /* 卡片之间间距缩小 */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* 卡片 hover 效果（保留） */
+    .robot-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 图片容器（压缩间距） */
+    .robot-image {
+      text-align: center;
+      margin-bottom: 10px;
+      /* 图片与文字间距缩小 */
+    }
+
+    .robot-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* 文字描述（压缩间距） */
+    .robot-desc h2 {
+      font-size: 17px;
+      /* 标题字号微调 */
+      color: #333;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      /* 标题与文字间距缩小 */
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .robot-desc p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.7;
+      /* 行高缩小 */
+      text-align: justify;
+    }
+
+    /* 平板及以上适配（可选） */
+    @media (min-width: 768px) {
+      .robot-desc h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 固定蓝色标题 -->
+  <div class="fixed-title">
+    <h1>智慧数字工厂解决方案</h1>
+  </div>
+
+  <!-- 内容容器（压缩间距） -->
+  <div class="content-wrapper">
+    <div class="robot-container">
+      <!-- 卡片1 -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\software\WMS.png" data-glightbox="package">
+            <img src="images\software\WMS.png" alt="WMS">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>智慧仓库管理系统（WMS）</h2>
+          <p>
+            仓库管理系统(简称为WMS)分为系统设备硬件及仓库管理
+            软件两部分。系统硬件按工业标准配置，其主要设备包括:数据库
+            服务器、工作站、交换机、打印机等。
+            仓库管理软件具有出入库作业自动控制、出入库LED显示、作
+            业状态仿真监视、报警显示等功能。
+            集成化的仓库管理与控制系统可以对仓储物流进行动态的管理
+            与调度;对物流线上的设备进行实时管理与监测;对物流仓储系统
+            的运行状况进行评估，力求设备最大利用率和合理的物流;另外在
+            系统的开放性和可扩展性方面也应进行充分考虑，预留接口，便于
+            用户将来网络的拓展(与贵公司的信息管理系统、ERP或MRP等网
+            络联接)，以实现与公司其他职能部门的信息共享，为公司高层提
+            供有价值的决策信息的目的。
+          </p>
+        </div>
+      </div>
+
+      <!-- 卡片2（示例，可复制） -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\software\WCS.png" data-glightbox="package">
+            <img src="images\software\WCS.png" alt="WCS">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>智慧设备调度系统（WCS）</h2>
+          <p>
+            仓库控制系统(简称:WCS)，位于WMS和物流设备之间的中间
+            层，起到协调、调度底层的各种物流设备，使底层物流设备可以执行
+            仓储管理系统下发的业务流程;同时 WCS对物流运行的路径进行
+            规划，传递底层物流设备的工作状态给上层管理软件，达到监控物流
+            设备状态的目的。与上位系统对接，实现设备智能调度与控制管理，主要功能:任务管理、设备调度、设备监控、物流监控、故障提示、运行记
+            录等。</p>
+        </div>
+      </div>
+
+      <!-- 卡片2（示例，可复制） -->
+      <div class="robot-item" >
+        <div class="robot-image">
+          <a href="images\software\TMS.png" data-glightbox="package">
+            <img src="images\software\TMS.png" alt="TMS">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>智慧物流管理系统（TMS）</h2>
+          <p>
+            TMS 物流管理系统，即运输管理系统，英文缩写为 “TMS” ，是 “供应链” 体系下基于网络运行的操作软件。它集成先进信息技术与物流管理理论，成为物流运输高效运作的核心支撑。
+            在功能方面，TMS
+            可管理装运单位，制定发货计划，处理运输模型、费用及数据，生成提单，优化运输规划，挑选承运人及服务，开展招标投标，审计支付货运账单，处理货损索赔，安排劳力与场所，管理国际运输文件，协调第三方物流等。通过智能算法，TMS
+            还能优化配送路线、调度车辆和人员，管理仓储库存及货物进出，高效处理货运订单，实时跟踪运输过程，实现物流资源合理配置，控制成本并保障运输质量 ，全面提升物流运输的管理能力与运作效率。 </p>
+        </div>
+      </div>
+
+      <!-- 卡片2（示例，可复制） -->
+      <div class="robot-item">
+        <div class="robot-image">
+          <a href="images\software\MES.png" data-glightbox="package">
+            <img src="images\software\MES.png" alt="MES">
+          </a>
+        </div>
+        <div class="robot-desc">
+          <h2>智能制造生产管理系统（MES）</h2>
+          <p>
+            制造企业生产过程执行系统(Manufacturing
+            Execution System)，是一套面向制造企业车间执
+            行层的生产信息化管理系统。
+            MES可以为企业提供包括制造数据管理、计划
+            排产管理、生产调度管理、库存管理、质量管理、人
+            力资源管理、工作中心/设备管理、工具工装管理、采
+            购管理、成本管理、项目看板管理、生产过程控制、底
+            层数据集成分析、上层数据集成分解等管理模块，为企
+            业打造一个扎实、可靠、全面、可行的制造协同管理平
+            台。制造执行系统MES能够帮助企业实现生产计划管理、生产过程控制、产品质量管理、车间库存管理、项目看板管理等 ，提高企
+            业制造执行能力。 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLightbox 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+  <script>
+    GLightbox({
+      selector: '[data-glightbox="package"]',
+      loop: false,
+      touchNavigation: true,
+      autoplayVideos: false
+    });
+  </script>
+</body>
+
+</html>
