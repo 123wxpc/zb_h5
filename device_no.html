@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 关键：设置视口让手机正确识别布局 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>智慧物流设备解决方案</title>
+  <!-- 引入 GLightbox 的 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    /* 基础重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      /* 让内容居中，给固定标题留出空间 */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      /* 为固定标题腾出顶部空间，值可根据标题高度调整 */
+    }
+
+    /* 固定标题样式 */
+    .fixed-title {
+      position: fixed;
+      /* 固定定位 */
+      top: 0;
+      /* 靠顶部显示 */
+      left: 50%;
+      /* 水平居中 */
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 750px;
+      /* 和内容容器最大宽度一致 */
+      background-color: #007aff;
+      /* 科技蓝背景色 */
+      padding: 15px 20px;
+      /* 内边距，调整标题显示区域大小 */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      /* 标题阴影，增强层次感 */
+      z-index: 999;
+      /* 提高层级，确保在内容上方显示 */
+    }
+
+    .fixed-title h1 {
+      font-size: 24px;
+      /* 加大字体大小 */
+      color: #fff;
+      /* 白色字体 */
+      text-align: center;
+    }
+
+    /* 卡片容器 */
+    .robot-container {
+      width: 100%;
+      max-width: 750px;
+      /* 限制最大宽度 */
+    }
+
+    /* 单个卡片 - 核心左右布局 */
+    .robot-item {
+      display: flex;
+      flex-direction: row;
+      /* 强制左右排列 */
+      align-items: center;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      /* 让手机也能滚动（如果内容溢出） */
+      overflow: hidden;
+      /* 重要：避免手机压缩布局 */
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      /* 加深阴影，增强立体感 */
+    }
+
+    /* 图片部分 - 固定宽度 */
+    .robot-item img {
+      width: 120px;
+      /* 手机上固定图片宽度 */
+      height: auto;
+      border-radius: 4px;
+      margin-right: 15px;
+      flex-shrink: 0;
+      /* 防止图片被压缩 */
+      cursor: zoom-in;
+      /* 鼠标悬停显示可放大图标 */
+    }
+
+    /* 文字描述部分 */
+    .robot-desc {
+      flex: 1;
+      /* 让文字占满剩余空间 */
+    }
+
+    .robot-desc h2 {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .robot-desc p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* 平板及以上优化（可选） */
+    @media (min-width: 768px) {
+      .robot-item img {
+        width: 150px;
+        /* 更大屏幕显示更大图片 */
+      }
+
+      .robot-desc h2 {
+        font-size: 18px;
+      }
+
+      .robot-desc p {
+        font-size: 15px;
+      }
+    }
+
+    /* 解决部分安卓手机滚动问题 */
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 固定标题部分 -->
+  <div class="fixed-title">
+    <h1>智慧物流设备解决方案</h1>
+  </div>
+
+  <div class="robot-container">
+    <div class="robot-item">
+      <a href="images\device\1、人形机器人.png" data-glightbox="robots">
+        <img src="images\device\1、人形机器人.png" alt="人形机器人">
+      </a>
+      <div class="robot-desc">
+        <h2>人形机器人</h2>
+        <p>通过视觉及相关传感器的植入实现对周围环境的感知能力，结合大模型实现对目标物体的认知决策，
+          通过抓取能力实现七轴全空间双臂运动控制，以满足特定任务操作硬件功能要求，最终实现对各种任务的执行操作。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\2、复合机器人.png" data-glightbox="robots">
+        <img src="images\device\2、复合机器人.png" alt="复合机器人">
+      </a>
+      <div class="robot-desc">
+        <h2>复合机器人</h2>
+        <p>拥有移动、抓取与搬运的集成作业能力，具备高精度、高柔性、高拓展性、易操作、人机协作等特点，可支持不同场景应用的快速集成落地，简化复杂的物料搬运场景，实现更高效的工业自动化。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\3、料箱机器人.png" data-glightbox="robots">
+        <img src="images\device\3、料箱机器人.png" alt="料箱机器人">
+      </a>
+      <div class="robot-desc">
+        <h2>料箱机器人</h2>
+        <p>支持0.2m~10m高度存取，丰富的执行机构类型，支持夹抱、托举、勾拉、复合型模块化替换，满足大小不同、类型不同的各类载具搬运，适配仓储流通、智能制造场景应用，广泛应用于电商鞋服、汽车、3C、医药、新能源等行业。
+        </p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\4、搬运叉车AGV.png" data-glightbox="robots">
+        <img src="images\device\4、搬运叉车AGV.png" alt="搬运叉车AGV">
+      </a>
+      <div class="robot-desc">
+        <h2>搬运叉车AGV</h2>
+        <p>负载覆盖 1000kg 到
+          3000kg，最高行驶速度可达2m/s，轻量化车体设计，配备高容量电池，可依据需求选择合适大小的电池，精准需求减少冗余。专为机器人量身设计的车体厚度，大大减少了运行的通道宽度，提升了物料存储空间。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\5、堆高叉车AGV.png" data-glightbox="robots">
+        <img src="images\device\5、堆高叉车AGV.png" alt="堆高叉车AGV">
+      </a>
+      <div class="robot-desc">
+        <h2>堆高叉车AGV</h2>
+        <p>覆盖了 1000kg 到 3000kg 的负载范围需求，最高可实现 4.5 米的提升高度定制；专为机器人量身设计的车体厚度，大大减少了运行的通道宽度，有效提升了物料存储空间。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\6、潜伏AGV.png" data-glightbox="robots">
+        <img src="images\device\6、潜伏AGV.png" alt="潜伏AGV">
+      </a>
+      <div class="robot-desc">
+        <h2>潜伏AGV</h2>
+        <p>举升型机器人是可自主载货、升降、运输的自动化物流设备，配举升装置，能实现搬运、存储等任务，用于工业和仓储物流，可提效降本。8 米级配备安全防护，作业方式多样，负载 1 吨、举升最高
+          2.3米，广泛用于高密度仓储、物流中心等，提升 50%-300% 仓储密度，优化空间与搬运效率 。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\7、潜伏叉取AGV.png" data-glightbox="robots">
+        <img src="images\device\7、潜伏叉取AGV.png" alt="潜伏叉取AGV">
+      </a>
+      <div class="robot-desc">
+        <h2>潜伏叉取AGV</h2>
+        <p>潜伏叉取 AGV
+          是兼具潜伏车灵活性与无人叉车搬运优势的移动机器人，结合潜伏底盘和叉车叉腿，解决潜伏车需额外配单层货架、叉车回转直径大及速度慢问题，可替换部分潜伏车搬运托盘场景。8米窄巷作业灵活，导航精度毫米级，多重安全防护。作业方式分潜伏叉取等类型，负载
+          1 吨、举升最高 2.3 米，适用于高密度仓库等场景，能提升 50%-300% 仓储密度，优化空间与搬运效率 。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\8、重型潜伏举升AGV.png" data-glightbox="robots">
+        <img src="images\device\8、重型潜伏举升AGV.png" alt="重型潜伏举升AGV">
+      </a>
+      <div class="robot-desc">
+        <h2>重型潜伏举升AGV</h2>
+        <p>重载举升 AGV 实现大件物料与产线对接，满足工业 / 物流自动化需求，用于汽车等行业，支持多向运动、多级安全防护，适应复杂环境。8 米窄巷作业灵活，导航精度毫米级，作业方式多样，负载最高
+          2.3米，广泛应用于高密度仓库等场景，提升 50%-300% 仓储密度，优化空间与搬运效率 。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\9、滚筒AGV.png" data-glightbox="robots">
+        <img src="images\device\9、滚筒AGV.png" alt="滚筒AGV">
+      </a>
+      <div class="robot-desc">
+        <h2>滚筒AGV</h2>
+        <p>
+          实现机台、传输线或工装机构等对接载具或物料，从而满足工厂智能化流水生产，在整车安全避障、对接确认及物料检测上都做了优化设计。.8米窄巷内灵活作业，导航精度达毫米级，配备多重安全防护装置保障作业安全。按作业方式分为潜伏叉取、三向叉式、全向侧叉等类型，负载能力覆盖1吨，举升高度最高达2.3米。广泛应用于高密度仓库、物流中心、制造业产线及冷链场景，能提升50%-300%仓储密度，显著优化空间利用率与搬运效率。
+        </p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\10、提升滚筒AGV.png" data-glightbox="robots">
+        <img src="images\device\10、提升滚筒AGV.png" alt="提升滚筒AGV">
+      </a>
+      <div class="robot-desc">
+        <h2>提升滚筒AGV</h2>
+        <p>
+          此款AGV与机台、传输线或工装机构等对接，接驳载具或物料，从而满足工厂智能化流水生产，在整车安全避障、对接确认及物
+          料检测上都做了优化设计。
+        </p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\11、旋转式立柱码垛机.png" data-glightbox="robots">
+        <img src="images\device\11、旋转式立柱码垛机.png" alt="旋转式立柱码垛机">
+      </a>
+      <div class="robot-desc">
+        <h2>旋转式立柱码垛机</h2>
+        <p>立柱式码垛机轮廓小，扛用性强，占地空间小，工作范围大，驱动关节较少，方便控制，操作简单，更加易于维护保养，可同时用于两条生产线，为企业提高工作效率，有效节省人工成本。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\12、协作码垛机器人.jpg" data-glightbox="robots">
+        <img src="images\device\12、协作码垛机器人.jpg" alt="协作码垛机器人">
+      </a>
+      <div class="robot-desc">
+        <h2>协作码垛机器人</h2>
+        <p>
+          协作码垛机器人融合机械与计算机程序，提升生产效率，广泛用于码垛行业，节省人力、空间，作业灵活、精准、高效且稳定。8 米窄巷可作业，导航毫米级，多重安全防护。作业方式多样，负载 1 吨、举升最高 2.3
+          米，适用于高密度仓库等场景，提升 50%-300% 仓储密度，优化空间与搬运效率 。
+        </p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\13、非旋转式立柱码垛机.png" data-glightbox="robots">
+        <img src="images\device\13、非旋转式立柱码垛机.png" alt="非旋转式立柱码垛机">
+      </a>
+      <div class="robot-desc">
+        <h2>非旋转式立柱码垛机</h2>
+        <p>此类立柱码垛机不具备旋转功能，其设计更为简单且结构稳定。它适用于具有相对固定的码垛规格和稳定生产线的情况。由于不需要旋转,这类码垛机往往更加节省成本,并且在稳定生产环境下能够快效运行。</p>
+      </div>
+    </div>
+
+    <div class="robot-item">
+      <a href="images\device\14、并联机器人码垛.png" data-glightbox="robots">
+        <img src="images\device\14、并联机器人码垛.png" alt="并联机器人码垛">
+      </a>
+      <div class="robot-desc">
+        <h2>并联机器人码垛</h2>
+        <p>并联机器人码垛是小型高速 4 自由度并联机器人，经优化平行并联运动学设计，结构合理、快速静音，最大承载 40KG，有效工作范围 1600mm，配智能视觉系统，广泛用于抓取分拣、搬运码垛、装配涂装等场景 。</p>
+      </div>
+    </div>    
+  </div>
+
+  <!-- 引入 GLightbox 的 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+  <script>
+    // 初始化 GLightbox
+    GLightbox({
+      selector: '[data-glightbox="robots"]',
+      loop: true, // 允许循环切换图片
+      touchNavigation: true, // 支持手势滑动切换（移动端友好）
+      autoplayVideos: false // 自动播放视频（这里用不到，设为 false）
+    });
+  </script>
+</body>
+
+</html>
